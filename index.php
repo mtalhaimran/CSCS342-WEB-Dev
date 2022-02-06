@@ -70,17 +70,6 @@
      <div class="text-center" style="margin-bottom: 5em; color: #fff;">
      <p>Hola!</p>
      </div>
-<<<<<<< HEAD
-    
-      <div class="form-row justify-content-center">
-         <div class="col-6  my-1">
-             <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Giriş Yap</button>
-         </div>
-         <div class="form-row justify-content-center">
-         <div class="col-6  my-1">
-             <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Giriş Yap</button>
-         </div>
-=======
      <div class="form-row justify-content-center">
        <div class="col-7">
          <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Admin Portal</button>
@@ -90,8 +79,6 @@
        </div>
       </div>
 
->>>>>>> df205126f2cd1409457085da7f3cb481439794ce
-      </div>
       </div>
     </form>
   </div>
