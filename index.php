@@ -17,8 +17,9 @@
 }
 		body {
 			background-image: url(img/bg_1.jpg);
-			background-size: auto;
-			background-position: center;
+			/* background-size: auto; */
+			background-position:center;
+      background-size:cover;
 }
 		@font-face {
 			font-family: workSans;
@@ -51,15 +52,6 @@
   </head>
 
   <body>
-    <div class="container-fluid">
-    	<ul class="nav justify-content-end">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">şifremi unuttum</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="https://facebook.com/EnsarDEMIRKOL" target="_blank">ensar demirkol</a>
-  </li>
-</ul>
     </div>
       <div class="container h-100">
   <div class="row h-100 justify-content-center align-items-center">
