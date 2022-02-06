@@ -72,16 +72,13 @@
      </div>
      <div class="form-row justify-content-center">
        <div class="col-7">
-           <input type="button" name="nickname" class="form-control" id="formGroupExampleInput" placeholder="Kullanıcı Adı">
+         <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Admin Portal</button>
        </div>
        <div class="col-7 my-1">
-           <input type="button" name="password" class="form-control" id="formGroupExampleInput" placeholder="Şifre">
+         <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Seller Portal</button>
        </div>
       </div>
-      <div class="form-row justify-content-center">
-         <div class="col-7  my-1">
-             <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Giriş Yap</button>
-         </div>
+
       </div>
     </form>
   </div>
