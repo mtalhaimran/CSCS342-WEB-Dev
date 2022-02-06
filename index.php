@@ -70,18 +70,16 @@
      <div class="text-center" style="margin-bottom: 5em; color: #fff;">
      <p>Hola!</p>
      </div>
-     <div class="form-row justify-content-center">
-       <div class="col-7">
-           <input type="button" name="nickname" class="form-control" id="formGroupExampleInput" placeholder="Kullanıcı Adı">
-       </div>
-       <div class="col-7 my-1">
-           <input type="button" name="password" class="form-control" id="formGroupExampleInput" placeholder="Şifre">
-       </div>
-      </div>
+    
       <div class="form-row justify-content-center">
-         <div class="col-7  my-1">
+         <div class="col-6  my-1">
              <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Giriş Yap</button>
          </div>
+         <div class="form-row justify-content-center">
+         <div class="col-6  my-1">
+             <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Giriş Yap</button>
+         </div>
+      </div>
       </div>
     </form>
   </div>
