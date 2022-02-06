@@ -72,10 +72,10 @@
      </div>
      <div class="form-row justify-content-center">
        <div class="col-7">
-           <input type="text" name="nickname" class="form-control" id="formGroupExampleInput" placeholder="Kullanıcı Adı">
+           <input type="button" name="nickname" class="form-control" id="formGroupExampleInput" placeholder="Kullanıcı Adı">
        </div>
        <div class="col-7 my-1">
-           <input type="password" name="password" class="form-control" id="formGroupExampleInput" placeholder="Şifre">
+           <input type="button" name="password" class="form-control" id="formGroupExampleInput" placeholder="Şifre">
        </div>
       </div>
       <div class="form-row justify-content-center">
