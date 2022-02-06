@@ -1,51 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>Document</title>
-</head>
-<body>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <title>Admin CMS Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+		html, body {
+			height: 100%;
+}
+		body {
+			background-image: url(img/bg_1.jpg);
+			background-size: auto;
+			background-position: center;
+}
+		@font-face {
+			font-family: workSans;
+			src: url(font/WorkSans-ExtraLight.ttf);
+		}
+		ul li a {
+			font-size: 17px;
+			font-family: "workSans";
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+		}
+
+		ul li a:hover {
+			color: #443020;
+		}
+
+		.form-row button {
+			font-size: 17px;
+			font-family: "workSans";
+			font-weight: bold;
+		}
+
+		h1, p, input {
+			font-family: 'workSans';
+		}
+		input {
+			font-weight: bold;
+		}
+	</style>
+  </head>
+
+  <body>
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-            </li>
-        </ul>
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        </div>
+    	<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">şifremi unuttum</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://facebook.com/EnsarDEMIRKOL" target="_blank">ensar demirkol</a>
+  </li>
+</ul>
     </div>
-    </nav>
- 
-</body>
+      <div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <form action="" method="post">
+     <div class="text-center" style="color: #fff;">
+     <h1>Pharma Management System</h1>
+     </div>
+     <div class="text-center" style="margin-bottom: 5em; color: #fff;">
+     <p>Hola!</p>
+     </div>
+     <div class="form-row justify-content-center">
+       <div class="col-7">
+           <input type="text" name="nickname" class="form-control" id="formGroupExampleInput" placeholder="Kullanıcı Adı">
+       </div>
+       <div class="col-7 my-1">
+           <input type="password" name="password" class="form-control" id="formGroupExampleInput" placeholder="Şifre">
+       </div>
+      </div>
+      <div class="form-row justify-content-center">
+         <div class="col-7  my-1">
+             <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Giriş Yap</button>
+         </div>
+      </div>
+    </form>
+  </div>
+</div>
+  </body>
 </html>
