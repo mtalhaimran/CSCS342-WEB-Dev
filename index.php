@@ -16,7 +16,6 @@
         }
         body {
             background-image: url(img/bg_1.jpg);
-            /* background-size: auto; */
             background-position:center;
             background-size:cover;
         }
@@ -26,23 +25,23 @@
         }
         ul li a {
             font-size: 17px;
-            font-family: "workSans";
-            color: rgb(255, 255, 255);
+            font-family: workSans, sans-serif;
+            color: rgb(19, 18, 18);
             font-weight: bold;
         }
 
         ul li a:hover {
-            color: #443020;
+            color: #181716;
         }
 
         .form-row button {
             font-size: 17px;
-            font-family: "workSans";
+            font-family: workSans, sans-serif;
             font-weight: bold;
         }
 
         h1, p, input {
-            font-family: 'workSans';
+            font-family: workSans, sans-serif;
         }
         input {
             font-weight: bold;
@@ -51,7 +50,6 @@
 </head>
 
 <body>
-</div>
 <div class="container h-100">
     <div class="row h-100 justify-content-center align-items-center">
         <form action="" method="post">
@@ -66,12 +64,12 @@
                     <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Admin Portal</button>
                 </div>
                 <div class="col-7 my-1">
-                    <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Seller Portal</button>
+                    <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #ffffff;">Seller Portal</button>
                 </div>
             </div>
 
-    </div>
-    </form>
+        </form>
+    <div></div>
 </div>
 </div>
 </body>
