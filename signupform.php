@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Hazrat & Talha">
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <title>Admin CMS Login</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../bootstrap_css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap_css/bootstrap.min.css" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
         }
         body {
-            background-image: url(../img/bg_1.jpg);
+            background-image: url(img/bg_1.jpg);
             background-position:center;
             background-size:cover;
         }
         @font-face {
             font-family: workSans;
-            src: url(../font/WorkSans-ExtraLight.ttf);
+            src: url(font/WorkSans-ExtraLight.ttf);
         }
         .signUpForm {
             margin: 0 auto;
@@ -64,39 +64,7 @@
 
 
 <body>
-<!--    <div class="row h-100 content-center align-items-center">Current Username: --><?php //echo "Hazrat" ?>
-<!--    -->
-<!--    <label for="username">Update Username: </label>-->
-<!--    <input type="text" name="username" id="username">-->
-<!--    <input type="button" value="Submit">-->
-<!---->
-<!--        <div>Update Password</div>-->
-<!---->
-<!--    <label for="Password">Enter Current Password: </label>-->
-<!--    <input type="password" name="Password" id="Password">-->
-<!---->
-<!--    <label for="newPassword">Enter New Password: </label>-->
-<!--    <input type="password" name="newPassword" id="newPassword">-->
-<!---->
-<!--    <label for="againPassword">Enter New Password Again: </label>-->
-<!--    <input type="password" name="againPassword" id="againPassword">-->
-<!---->
-<!--    <input type="button" value="Submit">-->
-<!---->
-<!---->
-<!--    Current Full Name: --><?php //echo "Muhammad Hazrat" ?>
-<!--    -->
-<!--    <label for="name">Update Full Name: </label>-->
-<!--    <input type="text" name="name" id="name">-->
-<!--    <input type="button" value="Submit">-->
-<!---->
-<!---->
-<!--    Current Age: --><?php //echo "19" ?>
-<!--    -->
-<!--    <label for="age">Update Age: </label>-->
-<!--    <input type="text" name="age" id="age">-->
-<!--    <input type="button" value="Submit">-->
-<!--    </div>-->
+
 <h1 id="h1">Welcome to Pharma System</h1>
 <form class="col-md-3 col-md-offset-3 signUpForm">
     <div class="form-row ">

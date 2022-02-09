@@ -8,7 +8,7 @@ session_start()
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="../styling files/login_style.css">
+  <link rel="stylesheet" href="styling files/login_style.css">
 </head>
 <body>
   <div class="wrapper fadeInDown">
@@ -16,9 +16,9 @@ session_start()
       <!-- Tabs Titles -->
 
       <!-- Icon -->
-      <div class="fadeIn first">
-        <img src="../styling files/pharma.webp" id="icon" alt="User Icon" />
-      </div>
+<!--      <div class="fadeIn first">-->
+<!--        <img src="styling files/pharma.webp" id="icon" alt="User Icon" />-->
+<!--      </div>-->
 
       <!-- Login Form -->
       <form>
@@ -29,9 +29,9 @@ session_start()
       </form>
 
       <!-- Remind Passowrd -->
-      <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot Password?</a>
-      </div>
+<!--      <div id="formFooter">-->
+<!--        <a class="underlineHover" href="#">Forgot Password?</a>-->
+<!--      </div>-->
 
     </div>
   </div>
