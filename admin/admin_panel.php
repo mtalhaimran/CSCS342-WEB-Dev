@@ -13,64 +13,64 @@
 
 <body>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+<!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
-        <div class="container-fluid">
-           
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active Menu" id="NavHome" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active Menu" id="NavHome" aria-current="page" href="admin_profile.php">Profile</a>
-                    </li>
-                    
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle Menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Seller
-                        </a>
-                        <ul class="dropdown-menu Menu " aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item Menu" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item Menu" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle Menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Admin
-                        </a>
-                        <ul class="dropdown-menu Menu " aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item Menu" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item Menu" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
+    <div class="container-fluid">
 
-                    
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active Menu" id="NavHome" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active Menu" id="NavHome" aria-current="page" href="admin_profile.php">Profile</a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle Menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Seller
+                    </a>
+                    <ul class="dropdown-menu Menu " aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item Menu" href="#">Add seller</a></li>
+                        <li><a class="dropdown-item Menu" href="#">Edit Existing Sellers</a></li>
+                        <li><a class="dropdown-item Menu" href="#">View Existing Sellers</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle Menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Medicine
+                    </a>
+                    <ul class="dropdown-menu Menu " aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item Menu" href="#">Add Medicine</a></li>
+                        <li><a class="dropdown-item Menu" href="#">Delete Medicine</a></li>
+                        <li><a class="dropdown-item Menu" href="#">Update Medicine List</a></li>
+                        <li><a class="dropdown-item Menu" href="#">View Medicines</a></li>
+                        <li><a class="dropdown-item Menu" href="#">Receipts</a></li>
+
+                    </ul>
+                </li>
+
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
-    </nav>
+    </div>
+</nav>
 
 </body>
 
