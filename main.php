@@ -9,7 +9,7 @@
     <title>Admin CMS Login</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap_css/bootstrap.min.css" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
