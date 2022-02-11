@@ -70,7 +70,7 @@ name, type, description, price, quantity (i.e total no of availability), usage, 
 <form class="col-md-3 col-md-offset-3 signUpForm">
     <div class="form-row ">
         <label for="mName">Medicine Name</label>
-        <input type="text" class="form-control" id="inputfullname name="inputfullname">
+        <input type="text" class="form-control" id="inputfullname" name="inputfullname">
     </div>
     <div class="form-row">
         <label for="mType">Medicine Type</label>
@@ -100,13 +100,22 @@ name, type, description, price, quantity (i.e total no of availability), usage, 
         <label for="mDose">Medicine Dose</label>
         <input type="text" class="form-control" id="mDose" name="mDose">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <br/>
+    <input type="submit" name="submit" value="Submit">
+    <br/>
+    Medicine id <br/> <input type="text" id="Dose" name="Dose">
+    <br/>
+    <input type="submit" name="Update" value="Update">
+
 </form>
 </body>
 </html>
 
 <?php
+include ("Database/server_configuration.php");
+include("Database/Medicine");
+
+$database="database.php";
 $name=POST_['inputfullname'];
 $type=POST_['mType'];
 $description=POST_['mDescription'];
@@ -115,4 +124,21 @@ $quantity=POST_['mQuantity'];
 $usage=POST_['mUsage'];
 $company=POST_['mCompany'];
 $dose=POST_['mDose'];
+
+
+//on Clicking Submit button, new data will be inserted,
+//on clicking Update button Data will be updates
+
+if (isset($_POST['Submit'])) {
+    # Publish-button was clicked
+    $sql = "INSERT INTO Medicine (`inputfullname`, `mType`, `mDescription`, `mPrice`, `mQuantity`, `mUsage`, `mCompany`, `mDose`)
+VALUES ($name,$type,$description,$price,$quantity,$usage,$company,$dose)";
+}
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+}
+
+else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
 ?>
