@@ -15,10 +15,10 @@ session_start()
     <div id="formContent">
         <!-- Tabs Titles -->
 
-        <!-- Icon -->
-        <!--      <div class="fadeIn first">-->
-        <!--        <img src="styling files/pharma.webp" id="icon" alt="User Icon" />-->
-        <!--      </div>-->
+
+              <div class="fadeIn first">
+                <img src="styling files/pharma.webp" id="icon" alt="User Icon" />
+              </div>
 
         <!-- Login Form -->
         <form>
