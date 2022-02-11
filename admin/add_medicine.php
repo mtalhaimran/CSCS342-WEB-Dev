@@ -106,4 +106,13 @@ name, type, description, price, quantity (i.e total no of availability), usage, 
 </body>
 </html>
 
-<
+<?php
+$name=POST_['inputfullname'];
+$type=POST_['mType'];
+$description=POST_['mDescription'];
+$price=POST_['mPrice'];
+$quantity=POST_['mQuantity'];
+$usage=POST_['mUsage'];
+$company=POST_['mCompany'];
+$dose=POST_['mDose'];
+?>
