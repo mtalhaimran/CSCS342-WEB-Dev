@@ -69,41 +69,41 @@
 <form class="col-md-3 col-md-offset-3 signUpForm">
     <div class="form-row ">
         <label for="inputfullname">Enter Your Full Name</label>
-        <input type="text" class="form-control" id="inputfullname">
+        <input type="text" class="form-control" id="inputfullname" name="inputfullname">
     </div>
     <div class="form-row">
         <label for="inputEmail">Enter Your Email Address</label>
-        <input type="email" class="form-control" id="inputEmail">
+        <input type="email" class="form-control" id="inputEmail" name="inputEmail">
     </div>
     <div class="form-row">
         <label for="inputusername">Address</label>
-        <input type="text" class="form-control" id="inputusername">
+        <input type="text" class="form-control" id="inputusername" name="inputusername">
     </div>
     <div class="form-row">
         <label for="inputAge">Your Age</label>
-        <input type="text" class="form-control" id="inputAge">
+        <input type="text" class="form-control" id="inputAge" name="inputAge">
     </div>
     <div class="form-row">
         <label for="inputusername">User Name</label>
-        <input type="text" class="form-control" id="inputusername">
+        <input type="text" class="form-control" id="inputusername" name="inputusername">
     </div>
     <div class="form-row">
-        <label for="inputusername">Phone Number</label>
-        <input type="text" class="form-control" id="inputusername">
+        <label for="inputphNO">Phone Number</label>
+        <input type="text" class="form-control" id="inputphNO" name="inputphNO">
     </div>
     <div class="form-row">
         <label for="inputpassword">Current Password</label>
-        <input type="password" class="form-control" id="inputpassword">
+        <input type="password" class="form-control" id="inputpassword" name="inputpassword">
     </div>
     <div class="form-row">
         <label for="inputnewPassword">New Password</label>
-        <input type="password" class="form-control" id="inputnewPassword">
+        <input type="password" class="form-control" id="inputnewPassword" name="inputnewPassword">
     </div>
     <div class="form-row">
         <label for="inputpasswordAgain">Retype your Password</label>
-        <input type="password" class="form-control" id="inputpasswordAgain">
+        <input type="password" class="form-control" id="inputpasswordAgain" name="inputpasswordAgain">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" name="submit"  class="btn btn-primary">Submit</button>
 </form>
 </body>
 </html>
