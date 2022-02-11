@@ -70,37 +70,40 @@ name, type, description, price, quantity (i.e total no of availability), usage, 
 <form class="col-md-3 col-md-offset-3 signUpForm">
     <div class="form-row ">
         <label for="mName">Medicine Name</label>
-        <input type="text" class="form-control" id="inputfullname">
+        <input type="text" class="form-control" id="inputfullname name="inputfullname">
     </div>
     <div class="form-row">
         <label for="mType">Medicine Type</label>
-        <input type="text" class="form-control" id="mType">
+        <input type="text" class="form-control" id="mType" name="mType">
     </div>
     <div class="form-row">
         <label for="mDescription">Medicine Description</label>
-        <input type="text" class="form-control" id="mDescription">
+        <input type="text" class="form-control" id="mDescription" name="mDescription">
     </div>
     <div class="form-row">
         <label for="mPrice">Medicine Price</label>
-        <input type="number" class="form-control" id="mPrice">
+        <input type="number" class="form-control" id="mPrice" name="mPrice">
     </div>
     <div class="form-row">
         <label for="mQuantity">Medicine Quantity</label>
-        <input type="number" class="form-control" id="mQuantity">
+        <input type="number" class="form-control" id="mQuantity" name="mQuantity">
     </div>
     <div class="form-row">
         <label for="mUsage">Medicine Usage</label>
-        <input type="text" class="form-control" id="mUsage">
+        <input type="text" class="form-control" id="mUsage" name="mUsage">
     </div>
     <div class="form-row">
         <label for="mCompany">Medicine Company Name</label>
-        <input type="text" class="form-control" id="mCompany">
+        <input type="text" class="form-control" id="mCompany" name="mCompany">
     </div>
     <div class="form-row">
         <label for="mDose">Medicine Dose</label>
-        <input type="text" class="form-control" id="mDose">
+        <input type="text" class="form-control" id="mDose" name="mDose">
     </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </body>
 </html>
+
+<
