@@ -16,13 +16,13 @@
             height: 100%;
         }
         body {
-            background-image: url(img/bg_1.jpg);
+            background-image: url(../img/bg_1.jpg);
             background-position:center;
             background-size:cover;
         }
         @font-face {
             font-family: workSans;
-            src: url(font/WorkSans-ExtraLight.ttf);
+            src: url(../font/WorkSans-ExtraLight.ttf);
         }
         .signUpForm {
             margin: 0 auto;

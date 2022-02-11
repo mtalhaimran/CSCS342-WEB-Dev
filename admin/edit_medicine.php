@@ -32,27 +32,27 @@
 <form class="col-md-4 col-md-offset-4 signUpForm" id="admin_profile_form">
     <label for="NameofMedicine">Enter The Name Of The Medicine You Want To Edit: </label>
     <input type="text" name="NameofMedicine" id="NameofMedicine">
-    <input type="submit" name="NameofMedicine" value="Verify Medicine Exists">
+    <input type="submit" name="bNameofMedicine" value="Verify Medicine Exists">
 
     <label for="typeOfMedicine">Update Type Of Medicine: </label>
     <input type="text" name="typeOfMedicine" id="typeOfMedicine">
-    <input type="submit" name="typeOfMedicine" value="Update Type">
+    <input type="submit" name="btypeOfMedicine" value="Update Type">
 
     <h3>Update Description</h3>
 
     <label for="Description">Update Description: </label>
     <input type="text" name="Password" id="Description">
-    <input type="submit" name="Description" value="Update Description">
+    <input type="submit" name="bDescription" value="Update Description">
 
 
     <label for="MedicinePrice">Update Pricing: </label>
     <input type="MedicinePrice" name="MedicinePrice" id="MedicinePrice">
-    <input type="submit" name="MedicinePrice" value="Update Pricing">
+    <input type="submit" name="bMedicinePrice" value="Update Pricing">
 
 
     <label for="Usage">Update Usage Label: </label>
     <input type="text" name="Usage" id="Usage">
-    <input type="submit" name="Usage" value="Update Usage">
+    <input type="submit" name="bUsage" value="Update Usage">
 
 
     <h2>Current Company Name: <?php echo "Geno Smith" ?></h2>
@@ -60,11 +60,11 @@
 
     <label for="CompanyName">Update Name: </label>
     <input type="text" name="CompanyName" id="CompanyName">
-    <input type="submit" name="CompanyName" value="Update Name">
+    <input type="submit" name="bCompanyName" value="Update Name">
 
     <label for="DoseDescription">Update Name: </label>
     <input type="text" name="DoseDescription" id="DoseDescription">
-    <input type="submit" name="DoseDescription" value="Update Dose">
+    <input type="submit" name="bDoseDescription" value="Update Dose">
 
     <h3>Current Quantity: <?php echo "19" ?></h3>
 
