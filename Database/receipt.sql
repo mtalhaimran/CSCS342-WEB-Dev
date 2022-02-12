@@ -1,4 +1,4 @@
-CREATE TABLE if not exists receipt(id INT,medicineName VARCHAR(255),DateSold VARCHAR(255),qtySold INT);
+CREATE TABLE if not exists receipt(id INT,medicineName VARCHAR(255),DateSold VARCHAR(255),qtySold INT, seller_id INT);
 
 INSERT INTO receipt VALUES(2,'Zetia','10/18/2003',8);
 INSERT INTO receipt VALUES(2,'Aggrastat','10/8/2009',2);

@@ -31,7 +31,7 @@
                     <a class="nav-link active Menu" id="NavHome" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active Menu" id="NavHome" aria-current="page" href="admin_profile.php">Profile</a>
+                    <a class="nav-link active Menu" id="NavHome" aria-current="page" href="seller_profile.php">Profile</a>
                 </li>
 
 
@@ -41,10 +41,10 @@
                         Medicine
                     </a>
                     <ul class="dropdown-menu Menu " aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item Menu" href="#">View Medicine</a></li>
-                        <li><a class="dropdown-item Menu" href="#">Search Medicine by Name</a></li>
-                        <li><a class="dropdown-item Menu" href="#">Search Medicine by Company</a></li>
-                        <li><a class="dropdown-item Menu" href="#">Sell Medicine</a></li>
+                        <li><a class="dropdown-item Menu" href="../medicine/view_medicine.php">View Medicine</a></li>
+                        <li><a class="dropdown-item Menu" href="../medicine/search_medicine_by_name.php">Search Medicine by Name</a></li>
+                        <li><a class="dropdown-item Menu" href="../medicine/search_medicine_by_company.php">Search Medicine by Company</a></li>
+                        <li><a class="dropdown-item Menu" href="../medicine/sell_medicine.php">Sell Medicine</a></li>
                     </ul>
                 </li>
 
@@ -57,7 +57,10 @@
         </div>
     </div>
 </nav>
+<?php
 
+?>
 </body>
 
 </html>
+

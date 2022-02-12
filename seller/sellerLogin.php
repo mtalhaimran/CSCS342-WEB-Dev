@@ -36,35 +36,39 @@ session_start()
     </div>
 </div>
 <?php
-$conn = new mysqli("localhost", "root", "","project");
+    include ("../Database/database.php");
+    $conn = OpenCon();
 
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
 
 
     $name=$_POST["login"];
     $password=$_POST["password"];
     $sql="SELECT * FROM seller WHERE username='$name' and password='$password'  LIMIT 1";
     $result = $conn->query($sql);
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error:Your Account does not Exist " . $sql . "<br>" . $conn->error;
-}
+/* $p=is_null($result['username']);
+ $u=is_null($result['password']);
+ if ( $p|| $u) {
+     print "<input type='checkbox' />"; }
+ else { print "<input type='checkbox' checked />"; }
+*/
+    /*if ($conn->query($sql) === 'not found') {
+        echo "Error:Your Account does not Exist " . $sql . "<br>" . $conn->error;
+    } else {
+        echo "New record created successfully";
+        }
+     echo "id: " . $row["id"]. " - Name: " . $row["fullName"]. "Username: " . $row["username"]. "<br>";
+    */
 
-/*if ($result->num_rows > 0) {
+
+if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["fullName"]. "Username: " . $row["username"]. "<br>";
+        header("Location:seller_panel.php");
     }
 } else {
     echo "Your account does not Exist";
-}*/
-$conn->close();
+}
+    CloseCon($conn);
 ?>
 </body>
 </html>
