@@ -46,19 +46,24 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 
-    $name=$_POST["name"];
+    $name=$_POST["login"];
     $password=$_POST["password"];
-    $sql="SELECT EXISTS(SELECT * FROM seller WHERE username LIKE '%$name%'and password LIKE '%$password%'  LIMIT 1)";
-$result = $conn->query($sql);
+    $sql="SELECT * FROM seller WHERE username='$name' and password='$password'  LIMIT 1";
+    $result = $conn->query($sql);
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error:Your Account does not Exist " . $sql . "<br>" . $conn->error;
+}
 
-if ($result->num_rows > 0) {
+/*if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["fullname"]. "Username: " . $row["username"]. "<br>";
+        echo "id: " . $row["id"]. " - Name: " . $row["fullName"]. "Username: " . $row["username"]. "<br>";
     }
 } else {
-    echo "0 results";
-}
+    echo "Your account does not Exist";
+}*/
 $conn->close();
 ?>
 </body>
