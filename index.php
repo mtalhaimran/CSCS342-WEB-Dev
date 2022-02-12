@@ -61,10 +61,10 @@
             </div>
             <div class="form-row justify-content-center">
                 <div class="col-7">
-                    <button type="submit" name="b_admin" onclick= "window.location.href = 'login.php'" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Admin Portal</button>
+                    <button type="button" name="b_admin" onclick="window.location.href='admin/adminLogin.php'" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Admin Portal</button>
                 </div>
                 <div class="col-7 my-1">
-                    <button type="submit" name="b_seller" href= 'login.php' class="btn btn-info btn-block"  style="background-color: #36281d; color: #ffffff;">Seller Portal</button>
+                    <button type="button" name="b_seller" onclick="window.location.href='seller/sellerLogin.php'" class="btn btn-info btn-block"  style="background-color: #36281d; color: #ffffff;">Seller Portal</button>
                 </div>
             </div>
 
@@ -77,3 +77,5 @@
 ?>
 </body>
 </html>
+
+
