@@ -1,4 +1,4 @@
-create table if not exists Medicine
+create table if not exists medicine
 (
     med_id        int auto_increment,
     inputfullname VARCHAR(255) null,
