@@ -116,7 +116,7 @@ include (__DIR__ ."Database/server_configuration.php");
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname="pharma";
+$dbname="project";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
