@@ -35,6 +35,8 @@ session_start()
 
     </div>
 </div>
-
+<?php
+    print_r($_REQUEST)
+?>
 </body>
 </html>

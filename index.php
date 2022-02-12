@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Hazrat & Talha">
+    <meta name="author" content="Talha, Hazrat, Haseeb">
     <link rel="icon" href="favicon.ico">
     <title>Admin CMS Login</title>
 
@@ -61,10 +61,10 @@
             </div>
             <div class="form-row justify-content-center">
                 <div class="col-7">
-                    <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Admin Portal</button>
+                    <button type="submit" name="b_admin" onclick= "window.location.href = 'login.php'" class="btn btn-info btn-block" style="background-color: #36281d; color: #fff;">Admin Portal</button>
                 </div>
                 <div class="col-7 my-1">
-                    <button type="submit" class="btn btn-info btn-block" style="background-color: #36281d; color: #ffffff;">Seller Portal</button>
+                    <button type="submit" name="b_seller" href= 'login.php' class="btn btn-info btn-block"  style="background-color: #36281d; color: #ffffff;">Seller Portal</button>
                 </div>
             </div>
 
@@ -72,5 +72,8 @@
     <div></div>
 </div>
 </div>
+<?php
+      print_r($_REQUEST);
+?>
 </body>
 </html>

@@ -35,17 +35,6 @@
                 </li>
 
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle Menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Seller
-                    </a>
-                    <ul class="dropdown-menu Menu " aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item Menu" href="#">Add seller</a></li>
-                        <li><a class="dropdown-item Menu" href="#">Edit Existing Sellers</a></li>
-                        <li><a class="dropdown-item Menu" href="#">View Existing Sellers</a></li>
-
-                    </ul>
-                </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle Menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,10 +44,7 @@
                         <li><a class="dropdown-item Menu" href="#">View Medicine</a></li>
                         <li><a class="dropdown-item Menu" href="#">Search Medicine by Name</a></li>
                         <li><a class="dropdown-item Menu" href="#">Search Medicine by Company</a></li>
-                        <li><a class="dropdown-item Menu" href="#">Update Medicine List</a></li>
-
-                        <li><a class="dropdown-item Menu" href="#">Receipts</a></li>
-
+                        <li><a class="dropdown-item Menu" href="#">Sell Medicine</a></li>
                     </ul>
                 </li>
 
