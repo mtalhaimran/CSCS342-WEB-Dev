@@ -21,10 +21,10 @@ session_start()
               </div>
 
         <!-- Login Form -->
-        <form method="POST">
-            <input type="text" id="username" class="fadeIn second" name="username" placeholder="User Name">
+        <form method="post" action=sellerLogin.php>
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
             <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
-            <input type="submit" name="bLogin" class="fadeIn fourth" value="Log In">
+            <input type="submit" class="fadeIn fourth" value="Log In" name="submit">
             <input type="button" value="Sign Up" onclick="window.location.href='../signupform.php'" >
         </form>
 
@@ -36,65 +36,35 @@ session_start()
     </div>
 </div>
 <?php
-//$conn = new mysqli("localhost", "root", "","project");
-//
-//
-//// Check connection
-//if ($conn->connect_error) {
-//    die("Connection failed: " . $conn->connect_error);
-//}
-//echo "Connected successfully";
+$conn = new mysqli("localhost", "root", "","project");
 
-    include ("../Database/database.php");
 
-    $conn = OpenCon();
-    echo "Connected Successfully";
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
 
-    print_r($_POST);
-//    if (isset($_POST["bLogin"])) {
-//        $username=$_POST["username"];
-//        $password=$_POST["password"];
-//
-//        $sql="SELECT EXISTS(SELECT * FROM seller WHERE username LIKE '%$username%'and password LIKE '%$password%' LIMIT 1)";
-//        $result = $conn->query($sql);
-//
-//        if ($result->num_rows > 0) {
-//            // output data of each row
-//            while($row = $result->fetch_assoc()) {
-//                print_r($row);
-//                echo "id: " . $row["id"]. " - Name: " . $row["fullname"]. "Username: " . $row["username"]. "<br>";
-//            }
-//        } else {
-//            echo "0 results";
-//        }
-//
-//    }
 
-    if (isset($_POST["bLogin"])) {
+    $name=$_POST["login"];
+    $password=$_POST["password"];
+    $sql="SELECT * FROM seller WHERE username='$name' and password='$password'  LIMIT 1";
+    $result = $conn->query($sql);
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error:Your Account does not Exist " . $sql . "<br>" . $conn->error;
+}
 
-        $username=$_POST["username"];
-        $password=$_POST["password"];
-
-        $sql = "SELECT EXISTS(SELECT * FROM seller WHERE username LIKE '%$username%'and password LIKE '%$password%' LIMIT 1)";
-        if($result = mysqli_query($conn, $sql)){
-            if(mysqli_num_rows($result) > 0){
-
-                while($row = mysqli_fetch_array($result)){
-                    echo "id: " . $row["id"]. " - Name: " . $row["fullname"]. "Username: " . $row["username"]. "<br>";
-                }
-                // Close result set
-                mysqli_free_result($result);
-            } else{
-                echo "No records matching your query were found.";
-            }
-        } else{
-            echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
-        }
-
+/*if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["fullName"]. "Username: " . $row["username"]. "<br>";
     }
-
-
-   CloseCon($conn);
+} else {
+    echo "Your account does not Exist";
+}*/
+$conn->close();
 ?>
 </body>
 </html>
