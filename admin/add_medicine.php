@@ -113,7 +113,7 @@ name, type, description, price, quantity (i.e total no of availability), usage, 
 
 <?php
 include ("Database/server_configuration.php");
-include("Database/Medicine");
+include("Database/Medicine.sql");
 
 $database="database.php";
 $name=POST_['inputfullname'];
@@ -131,7 +131,7 @@ $dose=POST_['mDose'];
 
 if (isset($_POST['Submit'])) {
     # Publish-button was clicked
-    $sql = "INSERT INTO Medicine (`inputfullname`, `mType`, `mDescription`, `mPrice`, `mQuantity`, `mUsage`, `mCompany`, `mDose`)
+    $sql = "INSERT INTO Medicine.sql (`inputfullname`, `mType`, `mDescription`, `mPrice`, `mQuantity`, `mUsage`, `mCompany`, `mDose`)
 VALUES ($name,$type,$description,$price,$quantity,$usage,$company,$dose)";
 }
 if ($conn->query($sql) === TRUE) {

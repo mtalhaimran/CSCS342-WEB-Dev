@@ -21,10 +21,10 @@ if ($conn->connect_error) {
 echo "Succesfully connected to databse.<br>";
 
 
-$sql = file_get_contents( __DIR__ .'\Medicine');
+$sql = file_get_contents(__DIR__ . '\Medicine.sql');
 $result = $conn->query($sql);
 
-$sql = "SELECT * FROM Medicine";
+$sql = "SELECT * FROM Medicine.sql";
 $result = $conn->query($sql);
 //
 if ($result->num_rows > 0) {
