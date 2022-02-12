@@ -112,8 +112,15 @@ name, type, description, price, quantity (i.e total no of availability), usage, 
 </html>
 
 <?php
-include ("Database/server_configuration.php");
-include("Database/Medicine.sql");
+include (__DIR__ ."Database/server_configuration.php");
+$servername = "localhost";
+$username = "root";
+$password = "1234";
+$dbname="pharma";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
 
 $database="database.php";
 $name=POST_['inputfullname'];
@@ -131,9 +138,9 @@ $dose=POST_['mDose'];
 
 if (isset($_POST['Submit'])) {
     # Publish-button was clicked
-    $sql = "INSERT INTO Medicine.sql (`inputfullname`, `mType`, `mDescription`, `mPrice`, `mQuantity`, `mUsage`, `mCompany`, `mDose`)
+    $sql = "INSERT INTO Medicine (`inputfullname`, `mType`, `mDescription`, `mPrice`, `mQuantity`, `mUsage`, `mCompany`, `mDose`)
 VALUES ($name,$type,$description,$price,$quantity,$usage,$company,$dose)";
-}
+
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
 }
@@ -141,4 +148,16 @@ if ($conn->query($sql) === TRUE) {
 else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
-?>
+}
+elseif (isset($_POST['Update'])) {
+    # Update-button was clicked
+    $sql = "UPDATE Medicine SET  inputfullname=$name, mType=$type, mDescription=$description, mPrice=$price, mQuantity=$quantity,mUsage=$usage, mCompany=$company, mDose=$dose;"
+if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully";
+  }
+  else {
+    echo "Error updating record: " . $conn->error;
+  }
+  }
+  $conn->close();
+
